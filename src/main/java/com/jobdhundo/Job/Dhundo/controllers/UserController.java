@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpSession;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:5173", "https://job-dhundo.netlify.app"}, allowCredentials = "true")
 public class UserController {
 	
 	@Autowired
