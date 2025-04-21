@@ -3,7 +3,7 @@ package com.jobdhundo.Job.Dhundo.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "users", schema = "jobdhundo")
 public class User {
 	
 	@Id
