@@ -58,4 +58,9 @@ public class TestimonialController {
     public List<Testimonial> getTestimonials() {
         return testimonialService.getAllTestimonials();
     }
+    @DeleteMapping("/{id}")
+    public void deleteTestimonial(@PathVariable int id) {
+        testimonialService.deleteTestimonial(id);
+    }
+
 }

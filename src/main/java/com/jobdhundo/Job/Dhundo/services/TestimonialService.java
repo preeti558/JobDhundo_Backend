@@ -20,4 +20,8 @@ public class TestimonialService {
     public List<Testimonial> getAllTestimonials() {
         return testimonialRepository.findAll();
     }
+    public void deleteTestimonial(int id) {
+        testimonialRepository.deleteById(id);
+    }
+
 }
